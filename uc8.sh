@@ -11,7 +11,7 @@ case $check in
 esac
 salary=$(($emphr*$emprateperhr))
 totalsalary=$(($totalsalary+$salary))
-X[i]=$salary
+X[$i]=$salary
 done
 X[$workingdays]=$totalsalary
 echo ${X[@]}
